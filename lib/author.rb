@@ -22,7 +22,7 @@ class Author
   end
   
   def self.post_count
-    
+    self.all.collect {|author| author.posts.flatten}
   end
   
 end
